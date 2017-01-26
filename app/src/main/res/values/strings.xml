@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Albagia - Nel Regno di Mezzo</string>
+    <string name="address"><a href="https://www.google.it/maps/place/Albagia+-+Nel+Regno+Di+Mezzo/@40.464388,17.2763984,15z/data=!4m12!1m6!3m5!1s0x0:0xb7831a230925bcc5!2sAlbagia+-+Nel+Regno+Di+Mezzo!8m2!3d40.464388!4d17.2763984!3m4!1s0x0:0xb7831a230925bcc5!8m2!3d40.464388!4d17.2763984">Via Pasquale Santilli, 23, Taranto</a></string>
+    <string name="open">Mar - Sab: 10 - 21\nDom: 10 - 13\nLun: Chiusura</string>
+    <string name="phone">099 231 1049</string>
+    <string name="description">Ristorazione. Gastronomia, buffet salati e dolci. Sala eventi e feste. Cake design.\n\nOrganizza le tue feste a tema, festeggia il compleanno dei tuoi sogni, con foto, video, torte e dolci, animazioni, musiche, divertimento e i buffet che più ti piacciono!</string>
+</resources>
