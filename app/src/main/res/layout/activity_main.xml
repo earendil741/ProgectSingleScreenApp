@@ -21,6 +21,7 @@
             android:src="@drawable/albagia"/>
 
         <ImageView
+            android:layout_marginTop="8dp"
             android:id="@+id/first_image"
             android:layout_width="wrap_content"
             android:layout_height="170dp"
@@ -30,87 +31,59 @@
             android:layout_alignParentLeft="true"
             />
         <LinearLayout
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
+            style="@style/info_box"
             android:id="@+id/first_info_line"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/title"
-            android:layout_toRightOf="@id/first_image">
+            android:layout_below="@id/title"
+            >
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_event_white_24dp"
-                />
+                style="@style/info_image"
+                android:src="@drawable/ic_event_white_24dp"/>
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                style="@style/info_text"
                 android:theme="@style/adresses"
                 android:text="@string/open"/>
-
         </LinearLayout>
         <LinearLayout
+            style="@style/info_box"
             android:id="@+id/second_info_line"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/first_info_line"
-            android:layout_toRightOf="@id/first_image">
+            android:layout_below="@+id/first_info_line">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_location_on_white_24dp"
-                />
+                style="@style/info_image"
+                android:src="@drawable/ic_location_on_white_24dp"/>
             <TextView
                 android:id="@+id/address"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                style="@style/info_text"
                 android:theme="@style/adresses"
                 android:text="@string/address"/>
-
-
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/info_box"
             android:layout_below="@+id/second_info_line"
             android:layout_toRightOf="@id/first_image">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_call_white_24dp"
-                />
+                style="@style/info_image"
+                android:src="@drawable/ic_call_white_24dp"/>
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                style="@style/info_text"
                 android:theme="@style/adresses"
                 android:autoLink="phone"
                 android:text="@string/phone"/>
-
         </LinearLayout>
         <TextView
             android:id="@+id/description"
-            android:layout_marginTop="16dp"
-            android:theme="@style/long_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/long_text"
             android:layout_below="@+id/first_image"
-            android:text="@string/description"
             android:layout_alignRight="@+id/first_image"
-            android:layout_alignEnd="@+id/first_image" />
+            android:layout_alignEnd="@+id/first_image"
+            android:text="@string/description"
+            />
         <ImageView
-            android:layout_marginTop="16dp"
-            android:layout_below="@+id/first_image"
-            android:layout_toRightOf="@+id/description"
-            android:layout_alignBottom="@+id/description"
-            android:layout_alignParentRight="true"
-            android:background="#000000"
             android:id="@+id/gallery"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"/>
+            style="@style/gallery_style"
+            android:layout_below="@id/first_image"
+            android:layout_toRightOf="@id/description"
+            android:layout_alignBottom="@id/description"
+            android:layout_alignParentRight="true" />
         <LinearLayout
             android:id="@+id/commands"
             android:layout_width="wrap_content"
@@ -119,20 +92,15 @@
             android:layout_alignLeft="@id/gallery"
             android:layout_alignRight="@id/gallery">
             <ImageButton
-                android:background="@android:color/transparent"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_skip_previous_white_24dp"
-                android:id="@+id/skip_previous" />
+                android:id="@+id/skip_previous"
+                style="@style/image_button"
+                android:src="@drawable/ic_skip_previous_white_24dp"/>
 
             <ImageButton
-                android:background="@android:color/transparent"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/skip_next"
+                style="@style/image_button"
                 android:src="@drawable/ic_skip_next_white_24dp"
-                android:id="@+id/skip_next"/>
+                />
         </LinearLayout>
     </RelativeLayout>
 
